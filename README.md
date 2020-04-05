@@ -64,7 +64,7 @@ $ npm test
 ## Thanks
 Thanks to Jared Hanson for his great Passport
 
-2)OAuth 2.0 & Implementation of Sign In with Google
+## 2)OAuth 2.0 & Implementation of Sign In with Google
 
 ## Passport strategy for Google OAuth 2.0
 
