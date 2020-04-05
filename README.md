@@ -7,8 +7,9 @@ This module lets you authenticate HTTP requests using cookies, it only allows yo
 By plugging into Passport, bearer token support can be easily and unobtrusively integrated into any application or framework that supports Connect-style middleware, including Express..
 
 ## Install
-$ npm install passport-cookie
-Usage
+''' $ npm install passport-cookie
+
+### Usage
 Configure Strategy
 The cookie authentication strategy authenticates users using a cookie. The strategy requires a verify callback, which accepts that credential and calls done providing a user.
 
