@@ -66,15 +66,16 @@ Thanks to Jared Hanson for his great Passport
 
 2)OAuth 2.0 & Implementation of Sign In with Google
 
-###Passport strategy for Google OAuth 2.0
+## Passport strategy for Google OAuth 2.0
+
 Passport strategies for authenticating with Google using ONLY OAuth 2.0.
 
 This module lets you authenticate using Google in your Node.js applications. By plugging into Passport, Google authentication can be easily and unobtrusively integrated into any application or framework that supports Connect-style middleware, including Express.
 
-###Install
+## Install
 ```$ npm install passport-google-oauth2```
 
-###Usage of OAuth 2.0
+## Usage of OAuth 2.0
 
 Configure Strategy
 
@@ -96,14 +97,14 @@ The Google OAuth 2.0 authentication strategy authenticates users using a Google 
 ));
 ```
 
-###Note about Local environment
+## Note about Local environment
 Avoid usage of Private IP, otherwise you will get the device_id device_name issue for Private IP during authentication.
 
 A workaround consist to set up thru the google cloud console a fully qualified domain name such as http://mydomain:3000/ for the callback then edit your /etc/hosts on your computer and/or vm to point on your private IP.
 
 Also both sign-in button + callbackURL has to be share the same url, otherwise two cookies will be created and it will lead to lost your session
 
-###Authenticate Requests
+## Authenticate Requests
 Use passport.authenticate(), specifying the 'google' strategy, to authenticate requests.
 
 For example, as route middleware in an Express application:
@@ -121,7 +122,7 @@ app.get( '/auth/google/callback',
         failureRedirect: '/auth/google/failure'
 }));
 ```
-###What you will get in profile response ?
+## What you will get in profile response ?
    provider         always set to `google`
    id
    name
@@ -135,14 +136,15 @@ app.get( '/auth/google/callback',
    emails
    gender
    picture
-###Examples
+   
+## Examples
 For a complete, working example, refer to the OAuth 2.0 example.
 
-###Credits
+## Credits
 
 Jared Hanson
 
-###License
+## License
 
 The MIT License
 
